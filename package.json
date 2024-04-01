@@ -1,9 +1,13 @@
 {
-  "name": "calculator",
-  "version": "1.0.0",
+  "name": "@ghulamahmed/cli-simple-calculator",
+  "version": "1.0.9",
   "description": "A simple calculator",
   "type": "module",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

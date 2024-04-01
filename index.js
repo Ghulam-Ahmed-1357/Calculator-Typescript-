@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     { message: "Enter first number", type: "number", name: "firstnumber" },
@@ -5,14 +6,14 @@ const answer = await inquirer.prompt([
     { message: "Select one operator", type: "list", name: "operator", choices: ["Addition", "Subtraction", "Multiplication", "Division"] }
 ]);
 if (answer.operator === "Addition") {
-    console.log(answer.firstnumber + answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " + " + answer.secondnumber + " = ", answer.firstnumber + answer.secondnumber);
 }
 else if (answer.operator === "Subtraction") {
-    console.log(answer.firstnumber - answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " - " + answer.secondnumber + " = ", answer.firstnumber - answer.secondnumber);
 }
 else if (answer.operator === "Multiplication") {
-    console.log(answer.firstnumber * answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " * " + answer.secondnumber + " = ", answer.firstnumber * answer.secondnumber);
 }
 else if (answer.operator === "Division") {
-    console.log(answer.firstnumber / answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " / " + answer.secondnumber + " = ", answer.firstnumber / answer.secondnumber);
 }

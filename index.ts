@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
@@ -7,11 +9,11 @@ const answer = await inquirer.prompt([
 ]);
 
 if (answer.operator === "Addition") {
-    console.log(answer.firstnumber + answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " + " + answer.secondnumber + " = ", answer.firstnumber + answer.secondnumber);
 } else if (answer.operator === "Subtraction") {
-    console.log(answer.firstnumber - answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " - " + answer.secondnumber + " = ", answer.firstnumber - answer.secondnumber);
 } else if (answer.operator === "Multiplication") {
-    console.log(answer.firstnumber * answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " * " + answer.secondnumber + " = ", answer.firstnumber * answer.secondnumber);
 } else if (answer.operator === "Division") {
-    console.log(answer.firstnumber / answer.secondnumber);
+    console.log("\n" + answer.firstnumber + " / " + answer.secondnumber + " = ", answer.firstnumber / answer.secondnumber);
 } 
